@@ -1,0 +1,61 @@
+﻿
+
+input[type=text] {
+    width: 50%;
+    margin-left: 0px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    width:150%;
+    background-color:black; color:white;
+    border: 3px solid #555;
+}
+
+.class{vertical-align:middle;margin:0px; display:block;height:900px; width:1300px; background-image:url("photos/a1.jpg");
+ background-size:1300px 900px; background-repeat:no-repeat;}
+#hey {font-family:Rockwell; font-size:100px; text-align:center; color:#FF8000;margin:0px;}
+#hye {font-size:200%; font-family:Brush Script MT;color:#FF8000;margin-top:0px; margin-left:300px;}
+
+ul{display:block-inline;list-style-type:none; margin-left:100px;  margin-right:100px;}
+
+ul li {float:left;margin-top:30px; }
+
+li a {color:white; padding: 15px; font-size:20px; text-decoration:none; font-weight:bold; font-family:Papyrus;}
+
+a:hover{color:#FF8000;}
+
+.demon {height:auto ;width:900px; background-image:url("photos/a11.jpg"); margin-top:-40px;color:white;font-weight:bold; line-height:25px; font-style:oblique;
+}
+
+footer {
+margin:0px;
+padding:0px;
+height:400px;
+width:1300px; 
+background-image:url("photos/a6.jpeg");
+background-size:1330px 500px;margin-top:0px;}
+
+table{
+color:#FF8000;
+width:80%;
+padding:20px;
+float:left;
+row-width:20px;
+text-align:center;
+font-family:Papyrus;
+
+}
+th {font-size:30px;}
+td a {text-decoration:none;color:#FF8000}
+
+td a:hover{color: white; }
+
+#one {background-color:black; opacity:0.4; padding:10px 15px;color:white;}
+
+#one:hover {background-color:black;opacity:0.9;color:white;}
+

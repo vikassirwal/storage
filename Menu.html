@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+	<script>
+		function validateForm() {
+			var x = document.forms["myForm"]["fname"].value;
+			if (x == null || x == "") {
+				alert("Name must be filled out");
+			return false;
+			}
+			var x = document.forms["myForm"]["E-mail"].value;
+			if (x == null || x == "") {
+				alert("last Name must be filled out");
+			return false;
+			}
+			var x = document.forms["myForm"]["PhoneNo."].value;
+			if (x == null || x == "") {
+				alert("Phone No. must be filled out");
+			return false;
+			}
+			var x = document.forms["myForm"]["Address"].value;
+			if (x == null || x == "") {
+				alert("Address must be filled out");
+			return false;
+			}
+			var x = document.forms["myForm"]["Message"].value;
+			if (x == null || x == "") {
+				alert("Message must be filled out");
+			return false;
+			}	
+			}
+
+	</script>
+
+</head>
+
+<center><body>
+	<div class="class">
+		<h1 id="hey">ROCKWELL</h1>
+		<p id="hye">Luring Tastebuds Since 1980</p>
+		<ul>
+			<li><a href="Home.html">HOME</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="About Us.html">ABOUT US</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="Menu.html">MENU</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="Careers.html">CAREERS</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="Contact Us.html">CONTACT US</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="Gallery.html">GALLERY</a></li>
+		</ul><br><br><br>
+
+		<a href="#salad" style="float:right;margin-right: 20px;"><img src="photos/a2.gif"; alt="saladpic"></a>
+		<br><br><br><br><br><br><br><br><br><br>
+
+		<div style="float:left;">
+			<p style="color:#FF8000; font-family:Rockwell;font-size:20px;margin:0px;padding:0px;font-style:oblique;">TODAY'S TRACK</p>
+			<audio id="audio_play">
+				<source src="photos/I Will Show You(AnyMaza.Com).ogg" type="audio/ogg" />
+				<source src="photos/I Will Show You(AnyMaza.Com).mp3" type="audio/mpeg" />
+			</audio>
+
+			<img src="photos/a102.gif" onClick="document.getElementById('audio_play').play(); return false;" />
+
+			<img src="photos/a103.gif" onClick="document.getElementById('audio_play').pause(); return false;" /></div>
+	</div>
+
+	<div style="font-family:Rockwell;font-size:80px;color:#FF8000;margin-top:35px;">MENU</div>
+
+	<div id="demon">
+		<table class="saint" >
+			<tr>
+				<th>S.NO</th>
+				<th>DISH</th>
+				<th>HOT</th>
+				<th>PRICE</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>PIZZA</td>
+				<td>LOW</td>
+				<td>$6</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>MACRONI PASTA</td>
+				<td>LOW</td>
+				<td>$5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>BURRITO</td>
+				<td>MEDIUM</td>
+				<td>$12</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>SALSA MIX</td>
+				<td>HIGH</td>
+				<td>$13</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>FREWSH SALAD BOWL</td>
+				<td>LOW</td>
+				<td>$7</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>BEEF BURGER</td>
+				<td>HOT</td>
+				<td>$4</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>FRUIT JUICE</td>
+				<td>LOW</td>
+				<td>$13</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>MILK SHAKE</td>
+				<td>LOW</td>
+				<td>$7</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>BEER</td>
+				<td>LOW</td>
+				<td>$4</td>
+			</tr>
+
+
+		</table>
+	</div>
+
+
+
+	<footer>
+		<div style="float:left;width:800px;height:300px;">
+			<table>
+				<tr>
+					<th>Pages</th>
+					<th>Dining</th>
+				</tr>
+
+				<tr>
+					<td><a href="Home.html">Home</a></td>
+					<td><a href="#Beer">Beer</a></td>
+				</tr>
+
+				<tr>
+					<td><a href="About Us.html">About Us</a></td>
+					<td><a href="#Pizza">Pizza</a></td>
+				</tr>
+
+				<tr>
+					<td><a href="Menu.html">Menu</a></td>
+					<td><a href="#Pasta">Pasta</a></td>
+				</tr>
+
+				<tr>
+					<td><a href="Careers.html">Career</a></td>
+					<td><a href="#Cappucino">Cappucino</a></td>
+				</tr>
+
+				<tr>
+					<td><a href="Contact Us.html">Contact</a></td>
+					<td><a href="#Gelato">Gelato</a></td>
+				</tr>
+			</table>
+		</div>
+
+		<div style="float:right;width:400px;height:300px;margin-top:30px;">
+			<form name="myForm" action="demo_form.asp"
+				onsubmit="return validateForm()" method="post" style="float:right; margin-right:200px;"><caption style="font-size:20px;" >
+				<i>Contact Us</i></caption><br>
+				<input type="text" name="fname" placeholder="Name"><br>
+				<input type="text" name="E-mail" placeholder="E-mail"><br>
+				<input type="text" name="PhoneNo." placeholder="PhoneNo."><br>
+				<input type="text" name="Address" placeholder="Address"><br>
+				<input type="text" name="Message" placeholder="Message"><br><br><br>
+				<input type="submit" value="Submit" id="one">
+			</form>
+		</div>
+		<br><br><br>
+
+		<p style="float:left; margin-left:-250px; margin-top:0px; font-family:Papyrus; display:block; width:100%; font-weight:bold;">Copyright &copy; 
+		2016 Delizioso.All rights reserved| <a href="privacypolicy.html" style="text-decoration:none;color:black;">PrivacyPolicy</a>
+		
+		<span style="float:right; margin-right:-100px">
+			<a href="https://www.facebook.com/Starbucks" target="_black"><img src="photos/a18.gif" alt="facebook" style="width:30px;height:30px;"></a>
+			<a href="https://twitter.com/Starbucks?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_black"><img src="photos/a19.gif" alt="twitter" style="width:34px;height:30px;"></a>
+			<a href="https://www.instagram.com/starbucks/" target="_blank"><img src="photos/a20.gif" alt="instagram" style="width:30px;height:30px;"></a>
+			<a href="https://www.youtube.com/user/Starbucks" target="_blank"><img src="photos/a21.gif" alt="youtube" style="width:30px;height:30px;"></a>
+			<a href="mailto:vikassirwal21@gmail.com?subject=Hello%20again"><img src="photos/a22.gif" alt="gmail" style="width:34px;height:30px;"></a>
+			<a href="https://in.pinterest.com/starbucks/" target="_blank"><img src="photos/a23.jpg" alt="pinterest" style="width:30px;height:30px;"></a></p>
+        </span>
+</footer>
+</body>
+
+</html>

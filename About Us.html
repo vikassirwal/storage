@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style05.css">
+
+	<script>
+		function validateForm() {
+			var x = document.forms["myForm"]["fname"].value;
+			if (x == null || x == "") {
+				alert("Name must be filled out");
+				return false;
+			}
+			var x = document.forms["myForm"]["E-mail"].value;
+			if (x == null || x == "") {
+				alert("last Name must be filled out");
+				return false;
+			}
+			var x = document.forms["myForm"]["PhoneNo."].value;
+			if (x == null || x == "") {
+				alert("Phone No. must be filled out");
+				return false;
+			}
+			var x = document.forms["myForm"]["Address"].value;
+			if (x == null || x == "") {
+				alert("Address must be filled out");
+				return false;
+			}
+			var x = document.forms["myForm"]["Message"].value;
+			if (x == null || x == "") {
+				alert("Message must be filled out");
+				return false;
+			}
+		}
+
+	</script>
+
+</head>
+
+<center><body>
+	<div class="class">
+		<h1 id="hey">ROCKWELL</h1>
+		<p id="hye">Luring Tastebuds Since 1980</p>
+		<ul>
+			<li><a href="Home.html">HOME</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="About Us.html">ABOUT US</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="Menu.html">MENU</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="Careers.html">CAREERS</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="Contact Us.html">CONTACT US</a>&nbsp&nbsp&nbsp|</li>
+			<li><a href="Gallery.html">GALLERY</a></li>
+		</ul><br><br><br>
+
+		<a href="#salad" style="float:right;margin-right: 20px;"><img src="photos/a2.gif"; alt="saladpic"></a>
+		<br><br><br><br><br><br><br><br><br><br>
+
+		<div style="float:left;">
+			<p style="color:#FF8000; font-family:Rockwell;font-size:20px;margin:0px;padding:0px;font-style:oblique;">TODAY'S TRACK</p>
+			<audio id="audio_play">
+					<source src="photos/I Will Show You(AnyMaza.Com).ogg" type="audio/ogg" />
+				<source src="photos/I Will Show You(AnyMaza.Com).mp3" type="audio/mpeg" />
+			</audio>
+
+			<img src="photos/a102.gif" onClick="document.getElementById('audio_play').play(); return false;" />
+
+			<img src="photos/a103.gif" onClick="document.getElementById('audio_play').pause(); return false;" />
+		</div>
+	</div>
+
+	<iframe width="1300" height="500" src="https://www.youtube.com/embed/Dr1UQ1ZSUig" frameborder="0" allowfullscreen></iframe>
+
+
+	<div style="font-family:Rockwell;font-size:80px;color:#FF8000;margin-top:35px;">ABOUT US</div>
+
+	<div class="demon"><br><br><br><br>
+		It all began on February 17, 1993, when Kent Taylor opened the first Texas Roadhouse in Clarksville, Indiana.  
+		Kent’s goal was to own not just a family restaurant and not just a steak restaurant, but a place where everyone, of all ages, 
+		could come and have a great meal and great fun for a great price.<br><br>
+
+		We like to brag about our Hand-Cut Steaks, Fall-Off-The-Bone Ribs, Made-From-Scratch Sides, and Fresh-Baked Bread. Everything we do
+		goes into making our hearty meals stand out. We handcraft almost everything we serve. We provide larger portions so you get more food 
+		for your dollar. And if you want an Ice Cold Beer or Legendary Margarita to wash it all down — well, we have those, too.<br><br>
+
+		Our food’s not the only thing that’s Legendary at the Roadhouse — our fun is too! From our line dancers to our jukebox to our friendly 
+		servers, you’ll enjoy every second you spend in a Texas Roadhouse.<br><br>
+		At Texas Roadhouse our team has an incredible sense of pride in everything we do. Our passion ensures you have a Legendary Experience every time.
+		Because of our passion for our guests and our communities, our team members are involved outside the restaurants in their local communities as a 
+		way to give back.<br><br>
+		The Texas Roadhouse story is simple. Legendary Food, Legendary Service® — 
+		all with lots of Legendary Fun!<br>
+
+		<center><details>
+		<summary>&copy Copyright 2015-16</summary>
+		<p>- by ROCKWELL. All Rights Reserved.</p>
+		<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+		</details>
+	</div>
+
+
+
+<footer>
+		<div style="float:left;width:800px;height:300px;">
+			<table>
+				<tr>
+					<th>Pages</th>
+					<th>Dining</th>
+				</tr>
+
+				<tr>
+					<td><a href="Home.html">Home</a></td>
+					<td><a href="#Beer">Beer</a></td>
+				</tr>
+
+				<tr>
+					<td><a href="About Us.html">About Us</a></td>
+					<td><a href="#Pizza">Pizza</a></td>
+				</tr>
+
+				<tr>
+					<td><a href="Menu.html">Menu</a></td>
+					<td><a href="#Pasta">Pasta</a></td>
+				</tr>
+
+				<tr>
+					<td><a href="Careers.html">Career</a></td>
+					<td><a href="#Cappucino">Cappucino</a></td>
+				</tr>
+
+				<tr>
+					<td><a href="Contact Us.html">Contact</a></td>
+					<td><a href="#Gelato">Gelato</a></td>
+				</tr>
+			</table>
+		</div>
+
+		<div style="float:right;width:400px;height:300px;margin-top:30px;">
+			<form name="myForm" action="demo_form.asp"
+				onsubmit="return validateForm()" method="post" style="float:right; margin-right:200px;"><caption style="font-size:20px;" >
+				<i>Contact Us</i></caption><br>
+				<input type="text" name="fname" placeholder="Name"><br>
+				<input type="text" name="E-mail" placeholder="E-mail"><br>
+				<input type="text" name="PhoneNo." placeholder="PhoneNo."><br>
+				<input type="text" name="Address" placeholder="Address"><br>
+				<input type="text" name="Message" placeholder="Message"><br><br><br>
+				<input type="submit" value="Submit" id="one">
+			</form>
+		</div>
+		<br><br><br>
+
+		<p style="float:left; margin-left:-250px; margin-top:0px; font-family:Papyrus; display:block; width:100%; font-weight:bold;">Copyright &copy; 
+		2016 Delizioso.All rights reserved| <a href="privacypolicy.html" style="text-decoration:none;color:black;">PrivacyPolicy</a>
+		
+		<span style="float:right; margin-right:-100px">
+			<a href="https://www.facebook.com/Starbucks" target="_black"><img src="photos/a18.gif" alt="facebook" style="width:30px;height:30px;"></a>
+			<a href="https://twitter.com/Starbucks?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_black"><img src="photos/a19.gif" alt="twitter" style="width:34px;height:30px;"></a>
+			<a href="https://www.instagram.com/starbucks/" target="_blank"><img src="photos/a20.gif" alt="instagram" style="width:30px;height:30px;"></a>
+			<a href="https://www.youtube.com/user/Starbucks" target="_blank"><img src="photos/a21.gif" alt="youtube" style="width:30px;height:30px;"></a>
+			<a href="mailto:vikassirwal21@gmail.com?subject=Hello%20again"><img src="photos/a22.gif" alt="gmail" style="width:34px;height:30px;"></a>
+			<a href="https://in.pinterest.com/starbucks/" target="_blank"><img src="photos/a23.jpg" alt="pinterest" style="width:30px;height:30px;"></a></p>
+        </span>
+	</footer>
+</body>
+
+</html>
